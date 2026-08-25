@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF9EF">
+<title>Happy Birthday, Anya ✦</title>
+
+<!-- ══════════════════════════════════════════════════════════════
+     ★ HOW TO PERSONALISE
+     1. Search "Anya"  → replace with HER name
+     2. Search "Arjun" → replace with YOUR name
+     3. Drop photos into /images/photo-01.jpg … photo-04.jpg
+        (missing photos auto-swap to custom pastel illustrations)
+   ══════════════════════════════════════════════════════════════ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<script>
+/* Image fallback — defined early so it can catch errors the moment they fire */
+var FB = {
+  fb1: '<svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A pastel birthday cake with lit candles">' +
+    '<rect width="600" height="750" fill="#FDE8EF"/>' +
+    '<circle cx="82" cy="112" r="6" fill="#C9E2F5"/><circle cx="522" cy="88" r="8" fill="#FFF1C2"/>' +
+    '<circle cx="546" cy="292" r="5" fill="#CFE3C3"/><circle cx="62" cy="330" r="7" fill="#E6DFF7"/>' +
+    '<circle cx="122" cy="580" r="6" fill="#FFF1C2"/><circle cx="512" cy="560" r="7" fill="#C9E2F5"/>' +
+    '<circle cx="300" cy="360" r="212" fill="none" stroke="#EE9FBB" stroke-width="2.5" stroke-dasharray="3 13" opacity=".7"/>' +
+    '<path d="M112 170l4.5 12 12 4.5-12 4.5-4.5 12-4.5-12-12-4.5 12-4.5z" fill="#F7D774"/>' +
+    '<path d="M488 420l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#EE9FBB"/>' +
+    '<ellipse cx="300" cy="602" rx="186" ry="26" fill="#FFFFFF" opacity=".85"/>' +
+    '<rect x="168" y="470" width="264" height="128" rx="26" fill="#F9CFDD"/>' +
+    '<circle cx="198" cy="522" r="4" fill="#FFF7E6"/><circle cx="248" cy="556" r="4" fill="#C9E2F5"/>' +
+    '<circle cx="304" cy="520" r="4" fill="#FFF7E6"/><circle cx="360" cy="556" r="4" fill="#E6DFF7"/><circle cx="408" cy="524" r="4" fill="#FFF7E6"/>' +
+    '<rect x="168" y="470" width="264" height="36" rx="18" fill="#FFF3C4"/>' +
+    '<circle cx="196" cy="508" r="12" fill="#FFF3C4"/><circle cx="230" cy="508" r="12" fill="#FFF3C4"/>' +
+    '<circle cx="264" cy="508" r="12" fill="#FFF3C4"/><circle cx="298" cy="508" r="12" fill="#FFF3C4"/>' +
+    '<circle cx="332" cy="508" r="12" fill="#FFF3C4"/><circle cx="366" cy="508" r="12" fill="#FFF3C4"/><circle cx="400" cy="508" r="12" fill="#FFF3C4"/>' +
+    '<rect x="212" y="360" width="176" height="112" rx="22" fill="#C9E2F5"/>' +
+    '<rect x="212" y="360" width="176" height="30" rx="15" fill="#FFFDF6"/>' +
+    '<circle cx="238" cy="392" r="10" fill="#FFFDF6"/><circle cx="269" cy="392" r="10" fill="#FFFDF6"/>' +
+    '<circle cx="300" cy="392" r="10" fill="#FFFDF6"/><circle cx="331" cy="392" r="10" fill="#FFFDF6"/><circle cx="362" cy="392" r="10" fill="#FFFDF6"/>' +
+    '<rect x="244" y="298" width="12" height="62" rx="6" fill="#FFD9C0"/>' +
+    '<rect x="294" y="288" width="12" height="72" rx="6" fill="#E6DFF7"/>' +
+    '<rect x="344" y="298" width="12" height="62" rx="6" fill="#CFE3C3"/>' +
+    '<path d="M250 268c9 12 9 20 0 26-9-6-9-14 0-26z" fill="#FFD98A"/>' +
+    '<path d="M300 256c10 13 10 22 0 28-10-6-10-15 0-28z" fill="#FFB870"/>' +
+    '<path d="M350 268c9 12 9 20 0 26-9-6-9-14 0-26z" fill="#FFD98A"/>' +
+    '</svg>',
+  fb2: '<svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Two friends taking a photo together">' +
+    '<rect width="600" height="750" fill="#E9F3FB"/>' +
+    '<circle cx="300" cy="400" r="232" fill="#FFF9EF"/>' +
+    '<circle cx="300" cy="400" r="256" fill="none" stroke="#8FC1E9" stroke-width="2.5" stroke-dasharray="3 13" opacity=".7"/>' +
+    '<path d="M96 150l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#F7D774"/>' +
+    '<path d="M508 208l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#EE9FBB"/>' +
+    '<circle cx="522" cy="556" r="8" fill="#CFE3C3"/><circle cx="84" cy="586" r="7" fill="#E6DFF7"/>' +
+    '<rect x="140" y="428" width="128" height="178" rx="58" fill="#F9CFDD"/>' +
+    '<circle cx="204" cy="372" r="58" fill="#FFDCC5"/>' +
+    '<path d="M146 372a58 58 0 0 1 116 0c-8-26-28-36-58-36s-50 10-58 36z" fill="#C9885C"/>' +
+    '<circle cx="184" cy="374" r="5" fill="#3B3550"/><circle cx="224" cy="374" r="5" fill="#3B3550"/>' +
+    '<circle cx="171" cy="390" r="8" fill="#F4A9BE" opacity=".65"/><circle cx="237" cy="390" r="8" fill="#F4A9BE" opacity=".65"/>' +
+    '<path d="M192 394q12 10 24 0" stroke="#3B3550" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+    '<rect x="332" y="440" width="128" height="166" rx="58" fill="#C9E2F5"/>' +
+    '<circle cx="396" cy="384" r="58" fill="#FFE9A8"/>' +
+    '<path d="M338 384a58 58 0 0 1 116 0c-6-28-28-40-58-40s-52 12-58 40z" fill="#6B5B8E"/>' +
+    '<circle cx="376" cy="386" r="5" fill="#3B3550"/><circle cx="416" cy="386" r="5" fill="#3B3550"/>' +
+    '<circle cx="363" cy="402" r="8" fill="#F4A9BE" opacity=".55"/><circle cx="429" cy="402" r="8" fill="#F4A9BE" opacity=".55"/>' +
+    '<path d="M384 406q12 10 24 0" stroke="#3B3550" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+    '<rect x="252" y="466" width="112" height="82" rx="18" fill="#4A4462"/>' +
+    '<rect x="284" y="450" width="44" height="22" rx="8" fill="#4A4462"/>' +
+    '<circle cx="308" cy="507" r="27" fill="#C9E2F5"/><circle cx="308" cy="507" r="14" fill="#FFFDF6"/>' +
+    '<circle cx="348" cy="482" r="5" fill="#FFD98A"/>' +
+    '<path d="M226 494l28-10M390 498l-26-12" stroke="#3B3550" stroke-width="10" stroke-linecap="round"/>' +
+    '<path d="M296 300l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#EE9FBB"/>' +
+    '</svg>',
+  fb3: '<svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A wrapped gift box with balloons">' +
+    '<rect width="600" height="750" fill="#FFF4D6"/>' +
+    '<circle cx="300" cy="420" r="238" fill="none" stroke="#F7D774" stroke-width="2.5" stroke-dasharray="3 13" opacity=".8"/>' +
+    '<path d="M472 96l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#EE9FBB"/>' +
+    '<path d="M96 190l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#8FC1E9"/>' +
+    '<circle cx="522" cy="470" r="8" fill="#F9CFDD"/><circle cx="76" cy="520" r="7" fill="#CFE3C3"/>' +
+    '<path d="M168 220C204 220 228 250 228 288c0 40-27 68-60 68s-60-28-60-68c0-38 24-68 60-68z" fill="#C9E2F5"/>' +
+    '<ellipse cx="146" cy="264" rx="13" ry="22" fill="#FFFDF6" opacity=".6"/>' +
+    '<path d="M161 356h14l-7 14z" fill="#8FC1E9"/>' +
+    '<path d="M168 370c14 20-12 36 2 56" stroke="#6E6788" stroke-width="2.5" fill="none" opacity=".55"/>' +
+    '<path d="M446 168c36 0 60 30 60 68 0 40-27 68-60 68s-60-28-60-68c0-38 24-68 60-68z" fill="#CFE3C3"/>' +
+    '<ellipse cx="424" cy="212" rx="13" ry="22" fill="#FFFDF6" opacity=".6"/>' +
+    '<path d="M439 304h14l-7 14z" fill="#9DBE8D"/>' +
+    '<path d="M446 318c14 22-12 38 2 58" stroke="#6E6788" stroke-width="2.5" fill="none" opacity=".55"/>' +
+    '<ellipse cx="300" cy="620" rx="172" ry="20" fill="#F2E2B3" opacity=".65"/>' +
+    '<rect x="200" y="470" width="200" height="150" rx="18" fill="#F9CFDD"/>' +
+    '<rect x="284" y="470" width="32" height="150" fill="#E6DFF7"/>' +
+    '<circle cx="232" cy="530" r="5" fill="#FFF7E6"/><circle cx="256" cy="578" r="5" fill="#FFF7E6"/>' +
+    '<circle cx="352" cy="542" r="5" fill="#FFF7E6"/><circle cx="376" cy="588" r="5" fill="#FFF7E6"/>' +
+    '<rect x="186" y="428" width="228" height="48" rx="14" fill="#EE9FBB"/>' +
+    '<rect x="284" y="428" width="32" height="48" fill="#C6B7EE"/>' +
+    '<ellipse cx="272" cy="412" rx="26" ry="18" fill="#C6B7EE" transform="rotate(-22 272 412)"/>' +
+    '<ellipse cx="328" cy="412" rx="26" ry="18" fill="#C6B7EE" transform="rotate(22 328 412)"/>' +
+    '<circle cx="300" cy="420" r="12" fill="#A895DE"/>' +
+    '</svg>',
+  fb4: '<svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Confetti and birthday stars">' +
+    '<rect width="600" height="750" fill="#EFE9FB"/>' +
+    '<circle cx="300" cy="372" r="222" fill="#FFF9EF" opacity=".7"/>' +
+    '<path d="M300 202l34 92 98-8-74 62 24 96-82-54-82 54 24-96-74-62 98 8z" fill="#FFD98A"/>' +
+    '<circle cx="300" cy="372" r="196" fill="none" stroke="#C6B7EE" stroke-width="2.5" stroke-dasharray="3 13" opacity=".8"/>' +
+    '<rect x="118" y="146" width="26" height="10" rx="5" fill="#F9CFDD" transform="rotate(24 118 146)"/>' +
+    '<rect x="468" y="128" width="26" height="10" rx="5" fill="#C9E2F5" transform="rotate(-18 468 128)"/>' +
+    '<rect x="86" y="466" width="26" height="10" rx="5" fill="#FFF1C2" transform="rotate(-30 86 466)"/>' +
+    '<rect x="486" y="478" width="26" height="10" rx="5" fill="#CFE3C3" transform="rotate(20 486 478)"/>' +
+    '<rect x="208" y="96" width="24" height="9" rx="4" fill="#E6DFF7" transform="rotate(-12 208 96)"/>' +
+    '<rect x="386" y="592" width="24" height="9" rx="4" fill="#F9CFDD" transform="rotate(16 386 592)"/>' +
+    '<circle cx="170" cy="296" r="9" fill="#EE9FBB"/><circle cx="444" cy="288" r="10" fill="#8FC1E9"/>' +
+    '<circle cx="142" cy="560" r="8" fill="#F7D774"/><circle cx="466" cy="586" r="9" fill="#9DBE8D"/>' +
+    '<path d="M120 646l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#EE9FBB"/>' +
+    '<path d="M478 636l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#F7D774"/>' +
+    '<path d="M286 600q14 16 0 32" stroke="#C6B7EE" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+    '</svg>'
+};
+function useFallback(img, id){
+  try{
+    var svg = FB[id]; if(!svg) return;
+    var w = document.createElement('div'); w.innerHTML = svg;
+    img.replaceWith(w.firstElementChild);
+    var f = img.closest('figure'); if(f) f.classList.add('is-fallback');
+  }catch(e){}
+}
+</script>
+
+<style>
+/* ═══════════════ TOKENS & BASE ═══════════════ */
+:root{
+  --cream:#FFF9EF; --cream-2:#FFFDF6;
+  --butter:#FFE9A8; --butter-soft:#FFF3C4; --butter-deep:#F7D774;
+  --peach:#FFDCC5; --peach-soft:#FFE8D6;
+  --blush:#F9CFDD; --blush-deep:#EE9FBB;
+  --powder:#C9E2F5; --powder-deep:#8FC1E9;
+  --lav:#E6DFF7; --lav-deep:#C6B7EE;
+  --sage:#CFE3C3; --sage-deep:#9DBE8D;
+  --ink:#3B3550; --ink-soft:#6E6788;
+  --disp:"Fraunces",Georgia,serif;
+  --script:"Instrument Serif",Georgia,serif;
+  --body:"Plus Jakarta Sans",system-ui,sans-serif;
+  --sh-soft:0 18px 40px -18px rgba(59,53,80,.28);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --spring:cubic-bezier(.34,1.45,.45,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;overflow-x:clip}
+body{
+  font-family:var(--body); background:var(--cream); color:var(--ink);
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;
+}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;touch-action:manipulation;-webkit-user-select:none;user-select:none}
+a{color:inherit}
+::selection{background:var(--butter);color:var(--ink)}
+:focus{outline:none}
+:focus-visible{outline:2px solid currentColor;outline-offset:4px;border-radius:4px}
+
+/* paper grain */
+body::after{
+  content:"";position:fixed;inset:0;z-index:64;pointer-events:none;opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+
+.container{width:min(1120px,92%);margin-inline:auto;position:relative}
+section{position:relative}
+.sec-tag{
+  display:flex;align-items:center;gap:.7rem;font-size:.68rem;font-weight:800;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);
+  padding-top:clamp(3.4rem,8vw,5.4rem);
+}
+.sec-tag::after{content:"";height:1.5px;width:56px;background:currentColor;opacity:.4}
+.kicker{font-size:.72rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft)}
+.kicker b{color:var(--blush-deep)}
+
+h1,h2,h3{font-family:var(--disp);font-weight:600;line-height:1.04;letter-spacing:-.015em}
+.h2{font-size:clamp(2rem,6.4vw,3.6rem);margin:.9rem 0 1rem}
+.h2 em{font-style:italic;color:var(--blush-deep)}
+.script{font-family:var(--script);font-style:italic;font-weight:400}
+
+/* ═══════════════ MOTION PRIMITIVES ═══════════════ */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.mask{display:block;overflow:hidden;padding-bottom:.07em;margin-bottom:-.07em}
+.mask>span{display:block;transform:translateY(118%);transition:transform .95s var(--ease) var(--d,0s)}
+.mask-group.in .mask>span{transform:none}
+.words .w{display:inline-block;opacity:0;transform:translateY(.55em);transition:opacity .55s ease var(--wd,0s),transform .55s var(--ease) var(--wd,0s)}
+.words.in .w{opacity:1;transform:none}
+
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-13px) rotate(var(--r,0deg))}}
+.float{animation:floaty var(--fd,5s) ease-in-out infinite;animation-delay:var(--fdel,0s)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.075)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* marquee ribbons */
+.marquee{overflow:hidden;width:104%;margin-left:-2%;transform:rotate(var(--mr,-1.2deg));background:var(--mbg,var(--butter-soft));box-shadow:var(--sh-soft)}
+.mq-track{display:flex;width:max-content;animation:mq var(--mspd,26s) linear infinite}
+.mq-set{display:flex;align-items:center;gap:2.4rem;padding:.72rem 2.4rem .72rem 0;font-family:var(--disp);font-style:italic;font-weight:600;font-size:1.05rem;letter-spacing:.06em;white-space:nowrap}
+.mq-set i{font-style:normal;color:var(--mac,var(--blush-deep))}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* wave dividers */
+.wave{line-height:0}
+.wave svg{display:block;width:100%;height:clamp(30px,5vw,52px)}
+
+/* sparkle taps */
+.spark{position:fixed;z-index:96;pointer-events:none;font-size:15px;font-style:normal;animation:sparkUp .9s cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes sparkUp{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--tx),var(--ty)) scale(.35) rotate(30deg)}}
+#fxLayer{position:fixed;inset:0;z-index:95;pointer-events:none}
+#fx{position:fixed;inset:0;z-index:90;pointer-events:none}
+
+.fx-btn{
+  position:fixed;right:16px;bottom:16px;z-index:100;width:56px;height:56px;border-radius:50%;
+  background:var(--butter);border:2px solid #fff;box-shadow:var(--sh-soft);
+  display:grid;place-items:center;color:var(--ink);
+  transition:transform .35s var(--spring);animation:bob 4.5s ease-in-out infinite;
+}
+.fx-btn:active{transform:scale(.86) rotate(-16deg)}
+.fx-btn svg{width:26px;height:26px}
+
+/* ═══════════════ 01 · INTRO ═══════════════ */
+.intro{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem 1.2rem 3rem;overflow:clip}
+.intro-pill{
+  font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);
+  background:#fff;border:1.5px solid var(--blush);border-radius:999px;padding:.55em 1.2em;box-shadow:var(--sh-soft);
+}
+.intro-pill b{color:var(--blush-deep)}
+.intro-title{font-size:clamp(2.7rem,10.5vw,6.2rem);font-weight:560;margin:1.4rem 0 1.2rem}
+.intro-title em{
+  font-style:italic;color:var(--ink);
+  background:linear-gradient(100deg,transparent 1%,var(--butter) 7%,var(--butter) 93%,transparent 99%);
+  padding:0 .16em;border-radius:.3em;-webkit-box-decoration-break:clone;box-decoration-break:clone;
+}
+.intro-sub{font-size:clamp(1rem,3.6vw,1.25rem);color:var(--ink-soft);max-width:26ch}
+.intro-sub .script{font-size:1.15em;color:var(--ink)}
+.intro-tip{margin-top:1.1rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}
+.intro .dd{position:absolute;pointer-events:none;color:var(--ink)}
+
+/* ═══════════════ 02 · HERO (centered) ═══════════════ */
+.hero{background:var(--cream);padding-bottom:clamp(3rem,7vw,5rem);overflow:clip}
+.hero .dd{position:absolute;pointer-events:none}
+.hero-grid{display:grid;gap:2.4rem;padding-top:clamp(1.6rem,5vw,4rem);justify-items:center;text-align:center}
+.hero-title{font-size:clamp(2.5rem,9vw,5rem);font-weight:620;font-style:italic}
+.hb-line{display:inline-block}
+.name{
+  font-family:var(--script);font-style:italic;font-weight:400;letter-spacing:-.01em;
+  font-size:clamp(4.3rem,17.5vw,9.6rem);line-height:.92;color:var(--blush-deep);
+  display:inline-block;transform:rotate(-1.5deg);
+}
+.name .name-star{font-size:.32em;vertical-align:.9em;color:var(--butter-deep);display:inline-block;animation:spin 9s linear infinite}
+.hero-sub{margin:1.3rem auto 0;max-width:36ch;font-size:clamp(.98rem,3.6vw,1.12rem);color:var(--ink-soft)}
+.hero-sub b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem;justify-content:center}
+.chip{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.5em 1em;border-radius:999px;border:1.5px solid transparent}
+.chip.c1{background:var(--butter-soft);border-color:var(--butter-deep)}
+.chip.c2{background:var(--peach-soft);border-color:var(--peach)}
+.chip.c3{background:#E9F3FB;border-color:var(--powder)}
+.hero-photo{position:relative;width:min(78%,340px);margin:0 auto}
+.arch{position:relative;transform:rotate(3deg)}
+.arch .ph{aspect-ratio:3/4;border-radius:190px 190px 24px 24px;border:6px solid #fff;box-shadow:var(--sh-soft);overflow:hidden;background:var(--blush-soft)}
+.ph{position:relative;overflow:hidden}
+.ph img,.ph svg{width:100%;height:100%;object-fit:cover;display:block}
+.tape{position:absolute;width:88px;height:26px;border-radius:2px;box-shadow:0 2px 6px rgba(59,53,80,.12);z-index:3}
+.tape.t1{background:rgba(255,233,168,.9);top:-11px;left:16px;transform:rotate(-8deg)}
+.tape.t2{background:rgba(249,207,221,.9);top:-9px;right:14px;transform:rotate(7deg)}
+.arch figcaption{margin-top:.9rem;text-align:center;font-family:var(--script);font-style:italic;font-size:1.05rem;color:var(--ink-soft)}
+.badge{position:absolute;left:-34px;bottom:36px;width:106px;height:106px;z-index:4;filter:drop-shadow(0 8px 14px rgba(59,53,80,.16))}
+.badge .spin{transform-origin:60px 60px;animation:spin 16s linear infinite}
+.badge text{font-family:var(--body);font-weight:800;font-size:10.6px;letter-spacing:2.4px;fill:var(--ink)}
+@media(min-width:880px){
+  .hero-photo{width:min(100%,400px)}
+  .badge{left:-46px;bottom:60px;width:126px;height:126px}
+}
+
+/* ═══════════════ 03 · GIFT ═══════════════ */
+.gift-sec{background:#EAF4FC;padding-bottom:clamp(3rem,7vw,5rem)}
+.gift-copy{max-width:520px}
+.gift-copy p{color:var(--ink-soft)}
+.gift-stage{position:relative;min-height:540px;display:flex;align-items:flex-end;justify-content:center;margin-top:1rem}
+.gift{position:relative;width:236px;height:236px;margin-bottom:14px;animation:bob 3.4s ease-in-out infinite}
+.gift-stage.open .gift{animation:none}
+.g-shadow{position:absolute;left:50%;bottom:-12px;width:220px;height:26px;transform:translateX(-50%);background:rgba(59,53,80,.12);border-radius:50%;filter:blur(4px)}
+.g-box{position:absolute;left:18px;right:18px;bottom:0;height:160px;background:var(--blush);border-radius:14px}
+.g-box::after{content:"";position:absolute;inset:0;border-radius:14px;box-shadow:inset 0 -16px 0 rgba(59,53,80,.06)}
+.g-rib-v{position:absolute;left:50%;top:0;bottom:0;width:36px;transform:translateX(-50%);background:var(--butter)}
+.g-lid{position:absolute;left:4px;right:4px;bottom:152px;height:46px;background:var(--lav);border-radius:10px;z-index:4;transition:transform .7s var(--spring)}
+.g-rib-h{position:absolute;left:50%;top:0;bottom:0;width:36px;transform:translateX(-50%);background:var(--butter)}
+.g-bow{position:absolute;left:50%;top:-27px;transform:translateX(-50%);width:0;height:0}
+.g-bow::before,.g-bow::after{content:"";position:absolute;top:-10px;width:36px;height:27px;background:var(--butter-deep);border-radius:50% 50% 50% 50%/62% 62% 38% 38%}
+.g-bow::before{left:-34px;transform:rotate(-28deg)}
+.g-bow::after{left:-2px;transform:rotate(28deg)}
+.g-knot{position:absolute;left:-9px;top:-8px;width:18px;height:18px;background:#E8B94F;border-radius:50%}
+/* lid drops down & rests against the box — never covers the voucher */
+.gift-stage.open .g-lid{transform:translate(6px,118px) rotate(-6deg)}
+.gift-note{
+  position:absolute;left:50%;top:-6px;z-index:3;width:min(310px,88vw);
+  background:var(--cream-2);border:2px dashed var(--blush-deep);border-radius:14px;
+  padding:1.5rem 1.3rem 1.2rem;transform:translate(-50%,86px) scale(.82) rotate(-2deg);opacity:0;
+  transition:transform .75s var(--spring) .14s,opacity .5s ease .14s;box-shadow:var(--sh-soft);
+}
+.gift-stage.open .gift-note{opacity:1;transform:translate(-50%,0) scale(1) rotate(-2deg)}
+.gn-tape{position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-3deg);width:86px;height:24px;background:rgba(201,226,245,.95);border-radius:2px}
+.gn-head{font-family:var(--disp);font-weight:800;font-size:1.02rem;text-align:center;letter-spacing:.04em}
+.gn-no{display:block;text-align:center;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin:.3rem 0 .8rem}
+.gn-list{list-style:none;font-size:.86rem;display:grid;gap:.5rem}
+.gn-list li{display:flex;gap:.55em;align-items:flex-start}
+.gn-list i{font-style:normal;color:var(--butter-deep)}
+.gn-foot{margin-top:.9rem;padding-top:.7rem;border-top:1.5px dotted var(--lav-deep);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:center}
+.gift-hint{min-height:1.6em;text-align:center;margin-top:1.1rem;font-family:var(--script);font-style:italic;font-size:1.15rem;color:var(--ink-soft)}
+
+/* ═══════════════ 04 · MEMORIES ═══════════════ */
+.memories{background:var(--cream);padding-bottom:clamp(3rem,7vw,5rem)}
+.mem-head{max-width:560px}
+.mem-head p{color:var(--ink-soft)}
+.mem-duo{display:grid;gap:2.4rem;margin-top:2.2rem;align-items:center}
+.polaroid{background:#fff;padding:13px 13px 16px;border-radius:6px;box-shadow:var(--sh-soft);transform:rotate(-4.5deg);transition:transform .6s var(--spring);position:relative}
+@media(hover:hover){.polaroid:hover{transform:rotate(-1deg) scale(1.02)}}
+.polaroid .ph{aspect-ratio:4/5;border-radius:3px;background:var(--powder)}
+.polaroid figcaption{margin-top:.8rem;font-family:var(--script);font-style:italic;font-size:1.02rem;color:var(--ink-soft);display:flex;justify-content:space-between;gap:1rem}
+.polaroid figcaption b{font-family:var(--body);font-size:.62rem;font-weight:800;letter-spacing:.18em;color:var(--blush-deep);align-self:center}
+.mem-note .idx{
+  font-family:var(--disp);font-weight:900;font-size:clamp(3.6rem,10vw,6.4rem);line-height:1;
+  color:var(--blush);-webkit-text-stroke:2px var(--blush-deep);
+}
+.mem-note h3{font-size:clamp(1.3rem,4.4vw,1.8rem);margin:.4rem 0 .5rem;font-style:italic}
+.mem-note p{color:var(--ink-soft);max-width:38ch}
+.cinema{position:relative;margin-top:clamp(2.4rem,6vw,4rem);height:clamp(330px,60vh,600px);border-radius:26px;overflow:hidden;box-shadow:var(--sh-soft);background:var(--butter-soft)}
+.cinema img,.cinema svg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 15s ease-in-out infinite alternate}
+.cinema .idx{position:absolute;top:.4rem;right:1.2rem;font-family:var(--disp);font-weight:900;font-size:clamp(3.4rem,9vw,6rem);color:rgba(255,253,246,.85);-webkit-text-stroke:2px var(--butter-deep);z-index:2}
+.cinema-chip{
+  position:absolute;left:14px;bottom:14px;z-index:2;background:var(--cream-2);border-radius:999px;
+  padding:.6em 1.1em;font-family:var(--script);font-style:italic;font-size:.98rem;transform:rotate(-1.5deg);box-shadow:var(--sh-soft);max-width:88%;
+}
+@media(min-width:880px){.mem-duo{grid-template-columns:.9fr 1.1fr;gap:4rem}.mem-note{padding-left:1rem}}
+
+/* ═══════════════ 05 · FRIENDSHIP ═══════════════ */
+.pals{background:#FFF3CF;padding-bottom:clamp(3.4rem,7vw,5.4rem);overflow:clip}
+.pals .dd{position:absolute;pointer-events:none}
+.pals-stmt{font-size:clamp(2.1rem,7.4vw,4.4rem);font-weight:560;margin-top:1.2rem}
+.pals-stmt .line2{padding-left:clamp(1.4rem,7vw,5rem)}
+.pals-stmt .line3{font-style:italic;color:var(--blush-deep);padding-left:clamp(.4rem,3vw,2rem)}
+.pals-stmt em{font-style:italic;background:var(--powder);padding:0 .14em;border-radius:.28em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.receipt-wrap{display:flex;justify-content:center;margin-top:clamp(2rem,5vw,3.4rem)}
+.receipt{
+  background:#fff;border-radius:4px 4px 18px 18px;box-shadow:var(--sh-soft);
+  width:min(540px,100%);padding:1.7rem 1.4rem 1.4rem;transform:rotate(1.4deg);position:relative;
+}
+.receipt::before{content:"";position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-2deg);width:96px;height:24px;background:rgba(207,227,195,.95);border-radius:2px}
+.receipt h3{font-size:.8rem;font-weight:800;letter-spacing:.26em;text-align:center;text-transform:uppercase;font-family:var(--body)}
+.receipt .r-sub{display:block;text-align:center;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin:.35rem 0 1.2rem}
+.receipt ul{list-style:none;display:grid;gap:.85rem}
+.receipt li{display:flex;align-items:baseline;gap:.7rem;font-size:.9rem}
+.receipt li svg{width:19px;height:19px;flex:none;align-self:center;color:var(--butter-deep)}
+.receipt li:nth-child(2n) svg{color:var(--blush-deep)}
+.receipt li:nth-child(3n) svg{color:var(--powder-deep)}
+.r-item{font-weight:600}
+.r-dots{flex:1;border-bottom:2px dotted var(--lav-deep);transform:translateY(-4px);min-width:24px}
+.r-val{font-family:var(--script);font-style:italic;font-size:1.02rem;color:var(--ink)}
+.r-total{margin-top:1.1rem;padding-top:1rem;border-top:2px dashed var(--butter-deep);display:flex;justify-content:space-between;align-items:center;background:var(--butter-soft);border-radius:10px;padding:0.8rem .9rem}
+.r-total b{font-family:var(--disp);font-weight:800}
+.r-total span{font-size:.62rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-deep)}
+
+/* ═══════════════ 06 · LETTER ═══════════════ */
+.letter{background:var(--cream);padding-bottom:clamp(3rem,7vw,5rem)}
+.letter-grid{display:grid;gap:2rem;margin-top:1.4rem}
+.letter-side .h2{font-size:clamp(2.2rem,6vw,3.4rem)}
+.sig-chip{display:inline-flex;align-items:center;gap:.5em;margin-top:1.2rem;background:var(--lav);border-radius:999px;padding:.55em 1.1em;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.squig{margin-top:1.4rem;color:var(--blush-deep)}
+.letter-body{max-width:60ch}
+.letter-body .words{font-size:clamp(1.02rem,3.4vw,1.22rem);line-height:1.75;margin-bottom:1.6rem;color:#4A4462}
+.letter-body .words:first-of-type::first-letter{
+  font-family:var(--disp);font-weight:900;font-size:2.9em;float:left;line-height:.82;
+  padding:.06em .12em 0 0;color:var(--blush-deep);
+}
+.letter-sign{font-family:var(--script);font-style:italic;font-size:1.5rem;color:var(--ink)}
+.letter-sign b{color:var(--blush-deep)}
+@media(min-width:940px){
+  .letter-grid{grid-template-columns:340px 1fr;gap:4.5rem}
+  .letter-side .sticky-inner{position:sticky;top:90px}
+}
+
+/* ═══════════════ 07 · CELEBRATION ═══════════════ */
+.party{background:#FDEFF3;padding-bottom:clamp(3rem,7vw,5rem);overflow:clip}
+.party .dd{position:absolute;pointer-events:none}
+.party-head{max-width:560px}
+.party-head p{color:var(--ink-soft)}
+.party-grid{display:grid;gap:3rem;margin-top:2rem;justify-items:center}
+.cake-zone{display:grid;justify-items:center}
+.cake{position:relative;padding:86px 26px 10px;display:flex;flex-direction:column;align-items:center;transition:transform .35s var(--spring)}
+.cake:active{transform:scale(.97)}
+.candles{display:flex;gap:30px;align-items:flex-end;margin-bottom:-2px;z-index:2}
+.candle{position:relative;width:13px;height:44px;border-radius:7px;background:repeating-linear-gradient(-45deg,#FFD9C0 0 6px,#FBE9D8 6px 12px)}
+.candle.tall{height:54px;background:repeating-linear-gradient(-45deg,#E6DFF7 0 6px,#F2EDFB 6px 12px)}
+.candle::before{content:"";position:absolute;top:-6px;left:50%;width:2.5px;height:7px;background:var(--ink-soft);transform:translateX(-50%);border-radius:2px}
+.flame{
+  position:absolute;left:50%;bottom:calc(100% + 3px);width:17px;height:25px;
+  transform:translateX(-50%) scale(0);transform-origin:50% 100%;opacity:0;
+  border-radius:50% 50% 50% 50%/62% 62% 38% 38%;
+  background:radial-gradient(circle at 50% 78%,#FFF6D8 0 26%,#FFD98A 55%,#FFB870 100%);
+  box-shadow:0 0 20px 5px rgba(255,213,138,.55);
+  transition:transform .5s var(--spring),opacity .3s ease;
+}
+.cake[data-state="lit"] .flame{opacity:1;transform:translateX(-50%) scale(1);animation:flick .8s ease-in-out infinite alternate}
+@keyframes flick{from{transform:translateX(-52%) scale(1) rotate(-2.5deg)}to{transform:translateX(-48%) scale(1.05,1.14) rotate(2.5deg)}}
+.cake[data-state="out"] .flame{opacity:0;transform:translateX(-50%) scale(0);transition-duration:.22s}
+.smoke{position:absolute;left:50%;bottom:calc(100% + 6px);width:11px;height:11px;margin-left:-5px;border-radius:50%;background:rgba(110,103,136,.4);opacity:0;filter:blur(1px)}
+.cake[data-state="out"] .smoke{animation:smoke 1.5s ease-out forwards}
+.cake[data-state="out"] .candle:nth-child(2) .smoke{animation-delay:.15s}
+.cake[data-state="out"] .candle:nth-child(3) .smoke{animation-delay:.3s}
+@keyframes smoke{0%{opacity:.75;transform:translateY(0) scale(.6)}100%{opacity:0;transform:translateY(-52px) scale(1.9)}}
+.tier{position:relative;border-radius:16px;z-index:1}
+.t-top{width:150px;height:62px;background-color:var(--powder);background-image:
+  radial-gradient(circle at 24% 62%,#fff 2.5px,transparent 3px),
+  radial-gradient(circle at 60% 74%,#F9CFDD 2.5px,transparent 3px),
+  radial-gradient(circle at 84% 56%,#fff 2.5px,transparent 3px)}
+.t-bot{width:218px;height:78px;margin-top:-6px;background-color:var(--blush);background-image:
+  radial-gradient(circle at 16% 56%,#fff 2.5px,transparent 3px),
+  radial-gradient(circle at 38% 76%,#FFF1C2 2.5px,transparent 3px),
+  radial-gradient(circle at 58% 52%,#C9E2F5 2.5px,transparent 3px),
+  radial-gradient(circle at 78% 76%,#fff 2.5px,transparent 3px),
+  radial-gradient(circle at 92% 54%,#E6DFF7 2.5px,transparent 3px)}
+.tier::before{content:"";position:absolute;left:0;right:0;top:0;height:22px;background:var(--cream-2);border-radius:16px 16px 0 0}
+.tier::after{content:"";position:absolute;left:8px;right:8px;top:16px;height:13px;
+  background:radial-gradient(circle at 11px 0,var(--cream-2) 10px,transparent 11px);background-size:22px 13px;background-repeat:repeat-x}
+.plate{width:262px;height:16px;margin-top:-3px;border-radius:50%;background:var(--lav);box-shadow:0 10px 18px -8px rgba(59,53,80,.3)}
+.cake-hint{min-height:1.7em;text-align:center;margin-top:1rem;font-family:var(--script);font-style:italic;font-size:1.12rem;color:var(--ink-soft)}
+.wish-wrap{min-height:118px;display:grid;justify-items:center;align-items:start;margin-top:.4rem}
+.wish{text-align:center;opacity:0;transform:translateY(14px) scale(.94);transition:opacity .6s ease,transform .6s var(--spring)}
+.wish.show{opacity:1;transform:none}
+.wish strong{font-family:var(--disp);font-weight:800;font-size:1.35rem;display:block}
+.wish span{display:block;font-size:.85rem;color:var(--ink-soft);margin-top:.2rem}
+.mini-btn{margin-top:.8rem;background:var(--butter);border-radius:999px;padding:.6em 1.3em;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;transition:transform .3s var(--spring)}
+.mini-btn:active{transform:scale(.9)}
+.balloons-side{display:grid;justify-items:center;width:100%}
+.balloons{display:flex;justify-content:center;align-items:flex-end;gap:.35rem;flex-wrap:wrap;max-width:430px}
+.balloon{position:relative;width:clamp(58px,16vw,84px);transition:transform .3s var(--spring)}
+.balloon:nth-child(2){margin-bottom:26px}
+.balloon:nth-child(4){margin-bottom:20px}
+.balloon:active{transform:scale(.92)}
+.b-svgwrap{display:block;animation:floaty var(--bd,4.6s) ease-in-out infinite;animation-delay:var(--fdel,0s);transform-origin:50% 100%}
+.balloon svg{display:block;width:100%;height:auto}
+.b-body{fill:var(--bc)}
+.b-shine{fill:#fff;opacity:.55}
+.b-knot{fill:var(--bc)}
+.b-string{stroke:var(--ink-soft);fill:none;stroke-width:2;opacity:.55}
+@keyframes bpop{0%{transform:scale(1)}35%{transform:scale(1.18)}100%{transform:scale(0);opacity:0}}
+.balloon.popped .b-svgwrap{animation:bpop .42s cubic-bezier(.5,0,.6,1) forwards}
+.b-word{
+  position:absolute;left:50%;top:16%;transform:translate(-50%,10px);opacity:0;white-space:nowrap;
+  background:#fff;border:1.5px solid var(--bc);border-radius:999px;padding:.4em .8em;
+  font-size:.68rem;font-weight:800;letter-spacing:.06em;pointer-events:none;z-index:2;box-shadow:var(--sh-soft);
+}
+.balloon.popped .b-word{animation:wordIn .55s .16s var(--spring) forwards}
+@keyframes wordIn{to{opacity:1;transform:translate(-50%,-8px)}}
+.balloon-hint{margin-top:1.4rem;text-align:center;font-family:var(--script);font-style:italic;font-size:1.08rem;color:var(--ink-soft)}
+.balloons-msg{min-height:84px;display:grid;place-items:center;text-align:center}
+.balloons-msg .inner{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s var(--spring)}
+.balloons-msg.show .inner{opacity:1;transform:none}
+.balloons-msg p{font-family:var(--disp);font-weight:700;font-size:1.15rem}
+@media(min-width:880px){.party-grid{grid-template-columns:1fr 1fr;gap:2rem;align-items:start}}
+
+/* ═══════════════ 08 · FINALE PHOTO ═══════════════ */
+.finale{background:#F1ECFB;padding-bottom:clamp(3rem,7vw,5rem);overflow:clip}
+.finale-frame{position:relative;margin-top:1.6rem}
+.finale-frame .ph{border-radius:28px;border:8px solid #fff;box-shadow:var(--sh-soft);aspect-ratio:16/11;background:var(--lav)}
+@media(min-width:880px){.finale-frame .ph{aspect-ratio:21/10}}
+.finale-frame .tape{width:110px;height:30px}
+.finale-frame .tape.t1{top:-13px;left:7%;transform:rotate(-7deg);background:rgba(255,233,168,.92)}
+.finale-frame .tape.t2{bottom:-11px;right:8%;top:auto;transform:rotate(-6deg);background:rgba(249,207,221,.92)}
+.finale-cap{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:1.1rem;flex-wrap:wrap}
+.finale-cap .script{font-size:1.15rem;color:var(--ink-soft)}
+.finale-cap .idx-sm{font-family:var(--disp);font-weight:900;font-size:1rem;color:var(--lav-deep);letter-spacing:.06em}
+.finale .dd{position:absolute;pointer-events:none}
+
+/* ═══════════════ 09 · FINAL MESSAGE ═══════════════ */
+.final-msg{background:#F1ECFB;text-align:center;padding-bottom:clamp(4rem,9vw,6.5rem)}
+.final-title{font-size:clamp(2rem,6.8vw,4.2rem);font-weight:560;max-width:16ch;margin:1.2rem auto 0}
+.final-title .mid{font-style:italic;color:var(--ink)}
+.final-title .end{color:var(--blush-deep)}
+.final-sign{margin-top:2.2rem;font-family:var(--script);font-style:italic;font-size:clamp(1.4rem,4.6vw,2rem)}
+.final-sign .from{display:block;font-family:var(--body);font-style:normal;font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:.9rem}
+.ps-chip{display:inline-block;margin-top:1.8rem;background:#fff;border:1.5px solid var(--lav-deep);border-radius:999px;padding:.6em 1.3em;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);transform:rotate(-1.5deg)}
+.foot{padding:2.2rem 1rem 3.2rem;text-align:center;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+.foot b{color:var(--blush-deep);letter-spacing:.22em}
+
+/* ═══════════════ REDUCED MOTION ═══════════════ */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  .rv,.words .w{opacity:1;transform:none}
+  .mask>span{transform:none}
+}
+</style>
+</head>
+<body>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="fxLayer" aria-hidden="true"></div>
+
+<!-- ═══════════ 01 · INTRO ═══════════ -->
+<section class="intro" id="intro">
+  <svg class="dd float" style="left:10%;top:16%;--fd:5.2s;--r:-8deg" width="30" height="30" viewBox="0 0 24 24" fill="#F7D774" aria-hidden="true"><path d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12C11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0z"/></svg>
+  <svg class="dd float" style="right:12%;top:22%;--fd:6.4s;--r:10deg;--fdel:.6s" width="46" height="62" viewBox="0 0 46 62" aria-hidden="true"><path d="M23 2C34 2 42 12 42 24c0 13-9 22-19 22S4 37 4 24C4 12 12 2 23 2z" fill="#C9E2F5"/><path d="M23 46l-4 6h8z" fill="#8FC1E9"/><path d="M23 52c5 5-4 7 0 10" stroke="#6E6788" stroke-width="1.6" fill="none" opacity=".6"/></svg>
+  <svg class="dd float" style="left:16%;bottom:20%;--fd:5.8s;--r:6deg;--fdel:.3s" width="26" height="26" viewBox="0 0 24 24" fill="#EE9FBB" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg>
+  <svg class="dd float" style="right:14%;bottom:26%;--fd:4.8s;--r:-12deg;--fdel:1s" width="34" height="34" viewBox="0 0 24 24" fill="#CFE3C3" aria-hidden="true"><path d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12C11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0z"/></svg>
+  <svg class="dd float" style="left:50%;top:9%;margin-left:-40px;--fd:7s;--r:3deg;--fdel:.2s" width="80" height="18" viewBox="0 0 80 18" aria-hidden="true"><path d="M2 12q10 -10 20 0t20 0t20 0t14 -4" stroke="#EE9FBB" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+
+  <p class="intro-pill rv" style="--d:.1s">a small surprise for <b>Anya</b></p>
+  <h1 class="intro-title mask-group">
+    <span class="mask" style="--d:.25s"><span>Today</span></span>
+    <span class="mask" style="--d:.4s"><span>is <em>your</em> day.</span></span>
+  </h1>
+  <p class="intro-sub rv" style="--d:.9s"><span class="script">So let's make it</span> a little more special.</p>
+  <p class="intro-tip rv" style="--d:1.2s">( psst — everything here reacts to a tap )</p>
+</section>
+
+<!-- ═══════════ 02 · HERO ═══════════ -->
+<section class="hero" id="hero">
+  <svg class="dd float" style="left:6%;top:8%;--fd:6s;--r:-8deg" width="26" height="26" viewBox="0 0 24 24" fill="#C9E2F5" aria-hidden="true"><path d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12C11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0z"/></svg>
+  <svg class="dd float" style="right:8%;bottom:14%;--fd:5.4s;--r:12deg;--fdel:.8s" width="34" height="34" viewBox="0 0 24 24" fill="#FFE9A8" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="kicker rv">✦ the official birthday broadcast</p>
+        <h1 class="hero-title mask-group">
+          <span class="mask" style="--d:.08s"><span class="hb-line">Happy</span></span>
+          <span class="mask" style="--d:.18s"><span class="hb-line">Birthday,</span></span>
+          <span class="mask name-mask" style="--d:.3s"><span class="name">Anya<span class="name-star">✦</span></span></span>
+        </h1>
+        <p class="hero-sub rv" style="--d:.5s">Certified best friend reporting for duty: <b>one (1) day of maximum celebration.</b> Zero chill permitted.</p>
+        <div class="chips rv" style="--d:.65s">
+          <span class="chip c1">est. 2019</span>
+          <span class="chip c2">chief hype officer</span>
+          <span class="chip c3">snack logistics</span>
+        </div>
+      </div>
+
+      <div class="hero-photo rv" style="--d:.35s">
+        <figure class="arch">
+          <span class="tape t1" aria-hidden="true"></span>
+          <span class="tape t2" aria-hidden="true"></span>
+          <div class="ph" data-plx-host>
+            <img src="images/photo-01.jpg" alt="Anya mid-laugh — official birthday girl evidence" data-plx="0.1" data-plx-scale="1.08" onerror="useFallback(this,'fb1')" decoding="async">
+          </div>
+          <figcaption>exhibit A: the birthday girl, unaware of today's chaos.</figcaption>
+        </figure>
+        <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="58" fill="#FFE9A8"/>
+          <g class="spin">
+            <defs><path id="circPath" d="M60 60 m-42 0 a42 42 0 1 1 84 0 a42 42 0 1 1 -84 0"/></defs>
+            <text><textPath href="#circPath">★ OFFICIAL BEST FRIEND ★ BIRTHDAY EDITION</textPath></text>
+          </g>
+          <path d="M60 42l4.4 11.6L76 58l-11.6 4.4L60 74l-4.4-11.6L44 58l11.6-4.4z" fill="#EE9FBB"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" style="--mbg:var(--butter-soft);--mr:-1.2deg" aria-hidden="true">
+  <div class="mq-track">
+    <div class="mq-set"><span>Happy Birthday Anya</span><i>✦</i><span>make a wish</span><i>✦</i><span>eat the cake</span><i>✦</i><span>take the photo</span><i>✦</i><span>best friends forever</span><i>✦</i></div>
+    <div class="mq-set"><span>Happy Birthday Anya</span><i>✦</i><span>make a wish</span><i>✦</i><span>eat the cake</span><i>✦</i><span>take the photo</span><i>✦</i><span>best friends forever</span><i>✦</i></div>
+  </div>
+</div>
+
+<!-- ═══════════ 03 · THE GIFT ═══════════ -->
+<div class="wave" style="background:#EAF4FC"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34 C 220 6 440 58 720 34 C 1000 10 1220 56 1440 28 L1440 56 L0 56 Z" fill="#EAF4FC"/></svg></div>
+<section class="gift-sec">
+  <div class="container">
+    <p class="sec-tag rv">02 · the gift</p>
+    <div class="gift-copy">
+      <h2 class="h2 rv" style="--d:.1s">First things first — <em>your present.</em></h2>
+      <p class="rv" style="--d:.2s">Hand-wrapped by yours truly. The tape situation is not up for discussion.</p>
+    </div>
+
+    <div class="gift-stage" id="giftStage">
+      <div class="gift-note" id="giftNote" aria-hidden="true">
+        <span class="gn-tape" aria-hidden="true"></span>
+        <p class="gn-head">Official Friendship Gift Voucher</p>
+        <span class="gn-no">No. 0001 — issued by Arjun</span>
+        <ul class="gn-list">
+          <li><i>★</i> one (1) movie night — snacks entirely on me</li>
+          <li><i>★</i> unlimited hype, valid all year, no cap</li>
+          <li><i>★</i> one extremely dramatic birthday hug</li>
+        </ul>
+        <p class="gn-foot">expires: never ✦ refunds: not a chance</p>
+      </div>
+      <button class="gift" id="gift" type="button" aria-expanded="false" aria-label="A wrapped birthday gift — tap to open it">
+        <span class="g-shadow" aria-hidden="true"></span>
+        <span class="g-lid" aria-hidden="true"><span class="g-rib-h"></span><span class="g-bow"><i class="g-knot"></i></span></span>
+        <span class="g-box" aria-hidden="true"><span class="g-rib-v"></span></span>
+      </button>
+    </div>
+    <p class="gift-hint" id="giftHint" aria-live="polite">tap to unwrap ↑</p>
+  </div>
+</section>
+
+<!-- ═══════════ 04 · MEMORIES ═══════════ -->
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 28 C 240 54 480 4 720 26 C 960 48 1200 10 1440 34 L1440 56 L0 56 Z" fill="#FFF9EF"/></svg></div>
+<section class="memories">
+  <div class="container">
+    <p class="sec-tag rv">03 · the archive</p>
+    <div class="mem-head">
+      <h2 class="h2 rv" style="--d:.1s">The group chat, but make it <em>a museum.</em></h2>
+      <p class="rv" style="--d:.2s">Four frames from six years of questionable decisions and perfect timing. Exhibits below — no touching, okay maybe touching.</p>
+    </div>
+
+    <div class="mem-duo">
+      <figure class="polaroid rv" style="--d:.15s">
+        <span class="tape t1" style="background:rgba(201,226,245,.95)" aria-hidden="true"></span>
+        <div class="ph">
+          <img src="images/photo-02.jpg" alt="A memory of the two friends out on an adventure" loading="lazy" onerror="useFallback(this,'fb2')" decoding="async">
+        </div>
+        <figcaption>“we walked 20,000 steps for one cup of really good chai.” <b>NO. 02</b></figcaption>
+      </figure>
+      <div class="mem-note">
+        <div class="idx rv">02</div>
+        <h3 class="rv" style="--d:.1s">the great chai expedition</h3>
+        <p class="rv" style="--d:.2s">Verdict of the court: the chai was mid. The company, however, was exceptional. We'd do it again tomorrow.</p>
+      </div>
+    </div>
+
+    <div class="cinema rv" style="--d:.1s">
+      <span class="idx" aria-hidden="true">03</span>
+      <img src="images/photo-03.jpg" alt="A wide, golden-hour moment from one of your shared adventures" loading="lazy" onerror="useFallback(this,'fb3')" decoding="async">
+      <span class="cinema-chip">No. 03 — golden hour showing off again. Typical.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 05 · FRIENDSHIP ═══════════ -->
+<div class="wave" style="background:#FFF3CF"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 220 8 460 54 720 30 C 980 6 1200 52 1440 24 L1440 56 L0 56 Z" fill="#FFF3CF"/></svg></div>
+<section class="pals">
+  <svg class="dd float" style="right:7%;top:16%;--fd:5.6s;--r:10deg" width="30" height="30" viewBox="0 0 24 24" fill="#EE9FBB" aria-hidden="true"><path d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12C11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0z"/></svg>
+  <svg class="dd float" style="left:5%;bottom:12%;--fd:6.6s;--r:-6deg;--fdel:.7s" width="26" height="26" viewBox="0 0 24 24" fill="#C9E2F5" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg>
+
+  <div class="container">
+    <p class="sec-tag rv">04 · friendship, itemised</p>
+    <h2 class="pals-stmt mask-group">
+      <span class="mask" style="--d:.05s"><span class="line1">Some people just</span></span>
+      <span class="mask" style="--d:.18s"><span class="line2">make <em>ordinary days</em></span></span>
+      <span class="mask" style="--d:.31s"><span class="line3">better.</span></span>
+    </h2>
+
+    <div class="receipt-wrap">
+      <div class="receipt rv" style="--d:.2s">
+        <h3>Friendship Receipt</h3>
+        <span class="r-sub">customer: anya ✦ since 2019 ✦ verified bestie</span>
+        <ul>
+          <li class="rv" style="--d:.25s"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg><span class="r-item">unlimited hype</span><span class="r-dots"></span><span class="r-val">∞</span></li>
+          <li class="rv" style="--d:.33s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8zm13 2h2a2.5 2.5 0 0 1 0 5h-2v-2h2a.5.5 0 0 0 0-1h-2v-2zM6 3c0 1.5-1.5 1.5-1.5 3S6 7.5 6 9M10 3c0 1.5-1.5 1.5-1.5 3S10 7.5 10 9" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg><span class="r-item">snacks, split 60/40 (your 60)</span><span class="r-dots"></span><span class="r-val">priceless</span></li>
+          <li class="rv" style="--d:.41s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg><span class="r-item">playlists traded, zero skips</span><span class="r-dots"></span><span class="r-val">10/10</span></li>
+          <li class="rv" style="--d:.49s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v2M4 13a8 8 0 0 1 16 0v3H4v-3zM12 21a2 2 0 0 0 2-2"/></svg><span class="r-item">emergency snack response</span><span class="r-dots"></span><span class="r-val">7 min avg</span></li>
+          <li class="rv" style="--d:.57s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span class="r-item">secret-keeping</span><span class="r-dots"></span><span class="r-val">vault-grade</span></li>
+          <li class="rv" style="--d:.65s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="r-item">bad-day rescue line</span><span class="r-dots"></span><span class="r-val">always picks up</span></li>
+        </ul>
+        <div class="r-total rv" style="--d:.75s"><b>TOTAL — one great friend</b><span>paid in full (in snacks)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 06 · THE LETTER ═══════════ -->
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 C 240 52 480 6 720 28 C 960 50 1200 8 1440 32 L1440 56 L0 56 Z" fill="#FFF9EF"/></svg></div>
+<section class="letter">
+  <div class="container">
+    <p class="sec-tag rv">05 · a small letter</p>
+    <div class="letter-grid">
+      <div class="letter-side">
+        <div class="sticky-inner">
+          <h2 class="h2 rv">Read this <em>slowly.</em></h2>
+          <span class="sig-chip rv" style="--d:.15s">from: arjun ✦ to: anya</span>
+          <svg class="squig rv" style="--d:.25s" width="120" height="24" viewBox="0 0 120 24" fill="none" aria-hidden="true"><path d="M4 14q12 -14 24 0t24 0t24 0t24 0t16 -4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="letter-body">
+        <p class="words">Dear Anya — another lap around the sun, and somehow you keep getting funnier, kinder, and a little more chaotic in exactly the right proportions. Science cannot explain it. I have stopped trying.</p>
+        <p class="words">Thank you for the loud laughs and the quiet pep talks, for knowing exactly when to show up with food, and for being the one person my worst jokes land with. Every hard day you have survived just made you more you — and more you is everyone's favourite thing.</p>
+        <p class="words">So today: eat the second slice, take the photo, and let people celebrate you for once. Whatever this next year throws at you, I will be right there — holding the camera, the snacks, and at least one terrible pun.</p>
+        <p class="letter-sign rv">yours in every inside joke,<br>— <b>Arjun</b> ✦</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 07 · MINI CELEBRATION ═══════════ -->
+<div class="wave" style="background:#FDEFF3"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 32 C 220 10 460 54 720 30 C 980 6 1220 50 1440 26 L1440 56 L0 56 Z" fill="#FDEFF3"/></svg></div>
+<section class="party">
+  <svg class="dd float" style="right:6%;top:12%;--fd:5.4s;--r:8deg" width="28" height="28" viewBox="0 0 24 24" fill="#F7D774" aria-hidden="true"><path d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12C11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0z"/></svg>
+  <svg class="dd float" style="left:4%;top:40%;--fd:6.2s;--r:-10deg;--fdel:.5s" width="24" height="24" viewBox="0 0 24 24" fill="#C6B7EE" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg>
+
+  <div class="container">
+    <p class="sec-tag rv">06 · ceremonial duties</p>
+    <div class="party-head">
+      <h2 class="h2 rv" style="--d:.1s">State-mandated <em>birthday protocol.</em></h2>
+      <p class="rv" style="--d:.2s">Cake must be tapped. Balloons must be popped. These are the rules. I don't make them, I just enforce them.</p>
+    </div>
+
+    <div class="party-grid">
+      <div class="cake-zone rv" style="--d:.15s">
+        <button class="cake" id="cake" type="button" data-state="unlit" aria-label="Birthday cake — tap to light the candles" aria-live="polite">
+          <span class="candles" aria-hidden="true">
+            <span class="candle"><i class="smoke"></i><i class="flame"></i></span>
+            <span class="candle tall"><i class="smoke"></i><i class="flame"></i></span>
+            <span class="candle"><i class="smoke"></i><i class="flame"></i></span>
+          </span>
+          <span class="tier t-top" aria-hidden="true"></span>
+          <span class="tier t-bot" aria-hidden="true"></span>
+          <span class="plate" aria-hidden="true"></span>
+        </button>
+        <p class="cake-hint" id="cakeHint">tap the cake to light the candles</p>
+        <div class="wish-wrap">
+          <div class="wish" id="wishMsg">
+            <strong>✦ wish received ✦</strong>
+            <span>legally binding. do not tell anyone what you wished.</span>
+            <button class="mini-btn" id="relight" type="button" hidden>relight the candles</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="balloons-side rv" style="--d:.25s">
+        <div class="balloons" id="balloons">
+          <button class="balloon" type="button" style="--bc:#F9CFDD;--bd:4.4s" aria-label="Pink balloon — tap to pop">
+            <span class="b-svgwrap"><svg viewBox="0 0 120 200" aria-hidden="true"><path class="b-body" d="M60 6C92 6 112 34 112 68c0 35-25 60-52 60S8 103 8 68C8 34 28 6 60 6z"/><ellipse class="b-shine" cx="41" cy="46" rx="12" ry="20"/><path class="b-knot" d="M53 127h14l-7 13z"/><path class="b-string" d="M60 140c12 16-12 28-2 46"/></svg></span>
+            <span class="b-word">main character</span>
+          </button>
+          <button class="balloon" type="button" style="--bc:#C9E2F5;--bd:5.2s;--fdel:.4s" aria-label="Blue balloon — tap to pop">
+            <span class="b-svgwrap"><svg viewBox="0 0 120 200" aria-hidden="true"><path class="b-body" d="M60 6C92 6 112 34 112 68c0 35-25 60-52 60S8 103 8 68C8 34 28 6 60 6z"/><ellipse class="b-shine" cx="41" cy="46" rx="12" ry="20"/><path class="b-knot" d="M53 127h14l-7 13z"/><path class="b-string" d="M60 140c12 16-12 28-2 46"/></svg></span>
+            <span class="b-word">iconic laugh</span>
+          </button>
+          <button class="balloon" type="button" style="--bc:#FFE9A8;--bd:4.8s;--fdel:.9s" aria-label="Yellow balloon — tap to pop">
+            <span class="b-svgwrap"><svg viewBox="0 0 120 200" aria-hidden="true"><path class="b-body" d="M60 6C92 6 112 34 112 68c0 35-25 60-52 60S8 103 8 68C8 34 28 6 60 6z"/><ellipse class="b-shine" cx="41" cy="46" rx="12" ry="20"/><path class="b-knot" d="M53 127h14l-7 13z"/><path class="b-string" d="M60 140c12 16-12 28-2 46"/></svg></span>
+            <span class="b-word">snack soulmate</span>
+          </button>
+          <button class="balloon" type="button" style="--bc:#E6DFF7;--bd:5.6s;--fdel:.2s" aria-label="Lavender balloon — tap to pop">
+            <span class="b-svgwrap"><svg viewBox="0 0 120 200" aria-hidden="true"><path class="b-body" d="M60 6C92 6 112 34 112 68c0 35-25 60-52 60S8 103 8 68C8 34 28 6 60 6z"/><ellipse class="b-shine" cx="41" cy="46" rx="12" ry="20"/><path class="b-knot" d="M53 127h14l-7 13z"/><path class="b-string" d="M60 140c12 16-12 28-2 46"/></svg></span>
+            <span class="b-word">10/10 friend</span>
+          </button>
+          <button class="balloon" type="button" style="--bc:#CFE3C3;--bd:4.2s;--fdel:.7s" aria-label="Sage balloon — tap to pop">
+            <span class="b-svgwrap"><svg viewBox="0 0 120 200" aria-hidden="true"><path class="b-body" d="M60 6C92 6 112 34 112 68c0 35-25 60-52 60S8 103 8 68C8 34 28 6 60 6z"/><ellipse class="b-shine" cx="41" cy="46" rx="12" ry="20"/><path class="b-knot" d="M53 127h14l-7 13z"/><path class="b-string" d="M60 140c12 16-12 28-2 46"/></svg></span>
+            <span class="b-word">wish granted</span>
+          </button>
+        </div>
+        <p class="balloon-hint">pop them all — every one owes you a compliment.</p>
+        <div class="balloons-msg" id="balloonsMsg">
+          <div class="inner">
+            <p>all popped. okay, that was fun.</p>
+            <button class="mini-btn" id="balloonReset" type="button">re-inflate the compliments</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" style="--mbg:#E9E1F8;--mac:#8f7cc9;--mr:1.1deg;--mspd:30s" aria-hidden="true">
+  <div class="mq-track">
+    <div class="mq-set"><span>one more year</span><i>✦</i><span>more memories</span><i>✦</i><span>more snacks</span><i>✦</i><span>more inside jokes</span><i>✦</i><span>zero chill</span><i>✦</i></div>
+    <div class="mq-set"><span>one more year</span><i>✦</i><span>more memories</span><i>✦</i><span>more snacks</span><i>✦</i><span>more inside jokes</span><i>✦</i><span>zero chill</span><i>✦</i></div>
+  </div>
+</div>
+
+<!-- ═══════════ 08 · FINAL PHOTO ═══════════ -->
+<div class="wave" style="background:#F1ECFB"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 240 8 480 52 720 28 C 960 4 1200 50 1440 22 L1440 56 L0 56 Z" fill="#F1ECFB"/></svg></div>
+<section class="finale" id="finale">
+  <svg class="dd float" style="left:6%;top:14%;--fd:5.8s;--r:-8deg" width="30" height="30" viewBox="0 0 24 24" fill="#EE9FBB" aria-hidden="true"><path d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12C11.1 17.4 6.6 12.9 0 12 6.6 11.1 11.1 6.6 12 0z"/></svg>
+  <svg class="dd float" style="right:5%;top:24%;--fd:6.6s;--r:14deg;--fdel:.6s" width="26" height="26" viewBox="0 0 24 24" fill="#C9E2F5" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg>
+
+  <div class="container">
+    <p class="sec-tag rv">07 · the finale</p>
+    <div class="finale-frame rv" style="--d:.15s">
+      <span class="tape t1" aria-hidden="true"></span>
+      <span class="tape t2" aria-hidden="true"></span>
+      <div class="ph" data-plx-host>
+        <img src="images/photo-04.jpg" alt="The two of you celebrating — the final frame of the archive" loading="lazy" data-plx="0.08" data-plx-scale="1.1" onerror="useFallback(this,'fb4')" decoding="async">
+      </div>
+      <div class="finale-cap">
+        <span class="script">proof we're already planning next year's edition.</span>
+        <span class="idx-sm">NO. 04 / 04</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 09 · FINAL MESSAGE ═══════════ -->
+<section class="final-msg" id="finalMsg">
+  <div class="container">
+    <p class="kicker rv">✦ last thing before you blow out the candles</p>
+    <h2 class="final-title mask-group">
+      <span class="mask" style="--d:.08s"><span>Another year,</span></span>
+      <span class="mask" style="--d:.2s"><span class="mid">another hundred memories</span></span>
+      <span class="mask" style="--d:.32s"><span class="end">waiting to happen.</span></span>
+    </h2>
+    <p class="final-sign rv" style="--d:.5s">Happy birthday, Anya.
+      <span class="from">— Arjun · your favourite person to do absolutely nothing with</span>
+    </p>
+    <span class="ps-chip rv" style="--d:.7s">P.S. this website never expires.</span>
+  </div>
+</section>
+
+<footer class="foot">
+  <p>✦ build by <b>Pixel Studio</b> ✦</p>
+</footer>
+
+<button class="fx-btn" id="confettiBtn" type="button" aria-label="Throw confetti">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l2.7 7.2L22 9.4l-5.6 4.7L18.4 22 12 17.6 5.6 22l2-7.9L2 9.4l7.3-1.2z"/></svg>
+</button>
+
+<noscript><style>.rv,.words{opacity:1;transform:none}.mask>span{transform:none}.gift-note{position:static;opacity:1;transform:none;margin-top:1rem}</style></noscript>
+
+<script>
+(function(){
+"use strict";
+var RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ── progressive word split ── */
+document.querySelectorAll(".words").forEach(function(p){
+  var text = p.textContent.trim();
+  p.setAttribute("aria-label", text);
+  p.textContent = "";
+  text.split(/\s+/).forEach(function(w, i){
+    var s = document.createElement("span");
+    s.className = "w"; s.setAttribute("aria-hidden","true"); s.textContent = w;
+    s.style.setProperty("--wd", Math.min(i*0.042, 2.6) + "s");
+    p.appendChild(s); p.appendChild(document.createTextNode(" "));
+  });
+});
+
+/* ── scroll reveals ── */
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+},{threshold:.16, rootMargin:"0px 0px -6% 0px"});
+document.querySelectorAll(".rv,.words,.mask-group").forEach(function(el){ io.observe(el); });
+
+/* ── gentle parallax ── */
+var plx = [].slice.call(document.querySelectorAll("[data-plx]"));
+function updPlx(){
+  if(RM) return;
+  var vh = window.innerHeight;
+  plx.forEach(function(el){
+    var host = el.closest("[data-plx-host]") || el.parentElement;
+    var r = host.getBoundingClientRect();
+    if(r.bottom < -100 || r.top > vh + 100) return;
+    var c = (r.top + r.height/2 - vh/2) / vh;
+    var f = parseFloat(el.dataset.plx) || .1;
+    var sc = el.dataset.plxScale ? " scale(" + el.dataset.plxScale + ")" : "";
+    el.style.transform = "translate3d(0," + (-c*f*150).toFixed(2) + "px,0)" + sc;
+  });
+}
+if(!RM){
+  var ptick = false;
+  window.addEventListener("scroll", function(){
+    if(ptick) return; ptick = true;
+    requestAnimationFrame(function(){ updPlx(); ptick = false; });
+  }, {passive:true});
+  updPlx();
+}
+
+/* ── confetti engine ── */
+var cvs = document.getElementById("fx"), ctx = cvs.getContext("2d");
+var W, H, DPR, parts = [], running = false;
+var COLORS = ["#FFD98A","#F9CFDD","#8FC1E9","#C6B7EE","#FFD9C0","#CFE3C3","#F7D774","#EE9FBB"];
+function sizeCvs(){
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth; H = window.innerHeight;
+  cvs.width = W*DPR; cvs.height = H*DPR;
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+}
+sizeCvs(); window.addEventListener("resize", sizeCvs);
+function burst(x, y, opt){
+  if(RM) return;
+  opt = opt || {};
+  var n = opt.n || 80, power = opt.power || 1, up = (opt.up === undefined ? 7 : opt.up);
+  for(var i=0;i<n;i++){
+    var a = Math.random()*Math.PI*2, sp = (2 + Math.random()*6)*power;
+    parts.push({x:x, y:y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp - up, g:.16,
+      w:5+Math.random()*6, h:8+Math.random()*8, rot:Math.random()*Math.PI,
+      vr:(Math.random()-.5)*.3, c:COLORS[i % COLORS.length],
+      shape:Math.random()<.3 ? "c" : "r", life:1, dec:.008+Math.random()*.007,
+      sway:Math.random()*Math.PI*2});
+  }
+  if(!running){ running = true; requestAnimationFrame(loop); }
+}
+function loop(){
+  ctx.clearRect(0,0,W,H);
+  for(var i=0;i<parts.length;i++){
+    var p = parts[i];
+    p.vy += p.g; p.sway += .08;
+    p.x += p.vx + Math.sin(p.sway)*.6; p.y += p.vy;
+    p.rot += p.vr; p.life -= p.dec;
+    ctx.save(); ctx.globalAlpha = Math.max(p.life,0);
+    ctx.translate(p.x,p.y); ctx.rotate(p.rot); ctx.fillStyle = p.c;
+    if(p.shape === "c"){ ctx.beginPath(); ctx.arc(0,0,p.w/2,0,7); ctx.fill(); }
+    else ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);
+    ctx.restore();
+  }
+  for(var j=parts.length-1;j>=0;j--) if(parts[j].life<=0 || parts[j].y>H+50) parts.splice(j,1);
+  if(parts.length){ requestAnimationFrame(loop); }
+  else { running = false; ctx.clearRect(0,0,W,H); }
+}
+
+/* ── tap sparkles ── */
+var fxLayer = document.getElementById("fxLayer");
+var SPARK_COLORS = ["#F7D774","#EE9FBB","#8FC1E9","#C6B7EE","#9DBE8D"];
+function sparkle(x, y, n){
+  if(RM) return;
+  n = n || 6;
+  for(var i=0;i<n;i++){
+    var s = document.createElement("i");
+    s.className = "spark";
+    s.textContent = ["✦","✧","⋆"][Math.floor(Math.random()*3)];
+    s.style.left = x + "px"; s.style.top = y + "px";
+    s.style.color = SPARK_COLORS[Math.floor(Math.random()*SPARK_COLORS.length)];
+    s.style.setProperty("--tx", (Math.random()*90-45) + "px");
+    s.style.setProperty("--ty", (-40 - Math.random()*70) + "px");
+    fxLayer.appendChild(s);
+    s.addEventListener("animationend", function(){ this.remove(); });
+  }
+}
+function center(el){ var r = el.getBoundingClientRect(); return [r.left + r.width/2, r.top + r.height/2]; }
+["#intro","#hero","#finale","#finalMsg"].forEach(function(sel){
+  var el = document.querySelector(sel);
+  if(el) el.addEventListener("pointerdown", function(e){ sparkle(e.clientX, e.clientY, 5); });
+});
+
+/* ── the gift ── */
+var gift = document.getElementById("gift"),
+    stage = document.getElementById("giftStage"),
+    hint = document.getElementById("giftHint"),
+    note = document.getElementById("giftNote"),
+    opened = false;
+gift.addEventListener("click", function(){
+  opened = !opened;
+  stage.classList.toggle("open", opened);
+  gift.setAttribute("aria-expanded", String(opened));
+  note.setAttribute("aria-hidden", String(!opened));
+  if(opened){
+    var c = center(gift);
+    burst(c[0], c[1]-40, {n:110, power:1.15});
+    sparkle(c[0], c[1]-60, 9);
+    hint.textContent = "I know, I know. you're welcome.";
+  } else {
+    hint.textContent = "tap to unwrap ↑";
+  }
+});
+
+/* ── the cake ── */
+var cake = document.getElementById("cake"),
+    cakeHint = document.getElementById("cakeHint"),
+    wish = document.getElementById("wishMsg"),
+    relight = document.getElementById("relight"),
+    cakeState = 0;
+cake.addEventListener("click", function(){
+  if(cakeState === 0){
+    cakeState = 1; cake.dataset.state = "lit";
+    cakeHint.textContent = "okay — close your eyes, tap again, make a wish";
+    cake.setAttribute("aria-label","Candles lit — tap again to blow them out");
+    sparkle.apply(null, center(cake).concat([5]));
+  } else if(cakeState === 1){
+    cakeState = 2; cake.dataset.state = "out";
+    cakeHint.textContent = "";
+    wish.classList.add("show");
+    relight.hidden = false;
+    var c = center(cake);
+    burst(c[0], c[1]-70, {n:95});
+  }
+});
+relight.addEventListener("click", function(){
+  cakeState = 0; cake.dataset.state = "unlit";
+  wish.classList.remove("show"); relight.hidden = true;
+  cakeHint.textContent = "tap the cake to light the candles";
+  cake.setAttribute("aria-label","Birthday cake — tap to light the candles");
+});
+
+/* ── the balloons ── */
+var balloons = [].slice.call(document.querySelectorAll(".balloon")),
+    bMsg = document.getElementById("balloonsMsg"),
+    bReset = document.getElementById("balloonReset"),
+    popped = 0;
+balloons.forEach(function(b){
+  b.addEventListener("click", function(){
+    if(b.classList.contains("popped")) return;
+    b.classList.add("popped"); b.disabled = true;
+    popped++;
+    var c = center(b);
+    burst(c[0], c[1], {n:24, power:.75, up:4});
+    if(popped === balloons.length) bMsg.classList.add("show");
+  });
+});
+bReset.addEventListener("click", function(){
+  popped = 0; bMsg.classList.remove("show");
+  balloons.forEach(function(b){ b.classList.remove("popped"); b.disabled = false; });
+});
+
+/* ── finale confetti on first arrival ── */
+var fin = document.getElementById("finale");
+var finIO = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      burst(window.innerWidth*.5, window.innerHeight*.22, {n:130, power:1.25, up:9});
+      setTimeout(function(){ burst(window.innerWidth*.2, window.innerHeight*.32, {n:55}); }, 320);
+      setTimeout(function(){ burst(window.innerWidth*.8, window.innerHeight*.32, {n:55}); }, 560);
+      finIO.disconnect();
+    }
+  });
+},{threshold:.25});
+finIO.observe(fin);
+
+/* ── global confetti button ── */
+document.getElementById("confettiBtn").addEventListener("click", function(){
+  var c = center(this);
+  burst(c[0]-10, c[1]-20, {n:70, power:.9, up:8});
+  sparkle(c[0], c[1], 6);
+});
+})();
+</script>
+</body>
+</html>
