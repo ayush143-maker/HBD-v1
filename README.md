@@ -1,13 +1,13 @@
 # HBD-v1
 
-A personalised birthday microsite for Anya, with animated typography and a sequence of visual sections that unfold like a greeting. The experience is contained in the top-level `index.html`; keep referenced image paths intact when updating its assets.
+A personalised birthday microsite for Anya, with animated typography and a sequence of visual sections. The experience is contained in the top-level `index.html`; preserve the paths to referenced images when updating assets.
 
-## Preview and review locally
+## Preview locally
 
-Open `index.html` in a browser; no package installation is required. For a local HTTP preview, run this from the repository directory:
+No package installation is required. Open `index.html` in a browser, or serve the repository directory:
 
-    python -m http.server 8000
+```sh
+python -m http.server 8000
+```
 
-Then visit http://localhost:8000. After changing the greeting or media, review the page at phone and desktop viewport sizes and check that referenced images still appear. If an image is missing, check that its path in `index.html` still matches its location.
-
-No hosting provider or provider-specific deployment steps are documented. Serve the page and its referenced images as static files, preserving their relative paths.
+Then visit http://localhost:8000. After changing the greeting or media, review the page at phone and desktop viewport sizes and check that referenced images appear. If an image is missing, confirm that its path in `index.html` matches its location. No deployment configuration is documented; serve the page and its images as static files with their relative paths intact.
