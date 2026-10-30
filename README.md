@@ -18,24 +18,24 @@ Edit the greeting and visible section content in `index.html`. The page title is
 
 Before moving or replacing an image, check its existing reference in `index.html`. Keep the same relative location, or update the reference to the new location.
 
-## Manual review checklist
+## Browser and layout review checklist
 
-Use these actions to review the page; they are not verified results or measured performance.
+This is a checklist for future review, not a report of completed compatibility testing or verified results.
 
-- Open `index.html` in a browser, or visit `http://localhost:8000` after starting the local server above.
-- Read the greeting and scroll through the sequence of visual sections. Observe the animated typography after any related changes.
-- Check every local image, audio, and font reference in `index.html` against a file at the referenced path. Confirm the images display after loading the page.
-- Review image and audio file sizes and dimensions for their use on the page. Avoid oversized media, and remove files only after checking that no page or style still references them.
-- The page links to Fraunces, Instrument Serif, and Plus Jakarta Sans through Google Fonts. Confirm that the external font dependency is intentional and each linked family is used; if typography changes, update the link and matching styles together. Review any external script references for the same purpose before retaining or adding them.
-- Inspect the page at a narrow phone-sized viewport and a wide desktop-sized viewport. Check text wrapping, section layout, and image presentation.
+- Open `index.html` in current versions of browsers relevant to the page's intended audience. Also load it through the local server above to review relative paths in a served-page context.
+- Read the greeting and scroll through the visual sections. Observe the animated typography after related edits.
+- Inspect the browser console during page load and while scrolling or viewing animations. Investigate errors that may affect content or presentation.
+- Inspect the Network panel for failed requests. Check every local image reference in `index.html` against the file at that relative path and confirm images display. Check requests for Fraunces, Instrument Serif, and Plus Jakarta Sans from Google Fonts; confirm remote font loading is intentional and review how the page looks if those requests fail.
+- Inspect the page at a narrow phone-sized viewport and a wide desktop-sized viewport. Check text wrapping, section layout, and image presentation for clipping or overflow.
+- Review image dimensions and file sizes for their use. Before removing a file, check that no page or style still references it; update paths when moving assets.
 
 ## Accessibility review checklist
 
 Use these as future review steps; they are not verified results.
 
 - Navigate through the page using only a keyboard. Check that any links or controls encountered can receive focus and be activated without a pointer.
-- Check that keyboard focus remains visible as you move through the page and is not lost against decorative backgrounds.
-- Review any links or controls for clear, meaningful names. Check that the greeting and section text remain understandable without relying on animated typography or visual styling alone.
+- Check that keyboard focus remains visible and is not lost against decorative backgrounds.
+- Review links and controls for clear, meaningful names. Check that the greeting and section text remain understandable without relying on animated typography or visual styling alone.
 - Check text contrast across the page, including the greeting and text placed over decorative backgrounds.
 - For each referenced image, check whether it conveys information that needs a text alternative; avoid redundant descriptions for purely decorative images.
 - Check animated typography and other motion with reduced motion requested. Consider reducing or stopping nonessential animation.
