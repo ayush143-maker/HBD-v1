@@ -18,6 +18,10 @@ Edit the greeting and visible section content in `index.html`. The page title is
 
 Before moving or replacing an image, check its existing reference in `index.html`. Keep the same relative location, or update the reference to the new location.
 
+## Configuration and data handling
+
+This repository is a static page centered on `index.html`; no environment template or backend configuration is listed. Do not put credentials or other private values in tracked files. Values embedded in a static page are delivered to visitors and cannot be kept secret. The greeting and referenced images are page content; review names, personal details, and media before sharing or publishing the page. Google Fonts are loaded from an external service, so browsers may make requests to Google to retrieve the linked fonts.
+
 ## Browser and layout review checklist
 
 This is a checklist for future review, not a report of completed compatibility testing or verified results.
