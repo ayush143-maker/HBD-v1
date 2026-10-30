@@ -1,6 +1,6 @@
 # HBD-v1
 
-A personalised birthday microsite for Anya, with animated typography and a sequence of visual sections that unfold like a greeting. Open the page to view the birthday experience; keep referenced image paths intact when updating its assets.
+A personalised birthday microsite for Anya, with animated typography and a sequence of visual sections that unfold like a greeting. The experience is contained in the top-level `index.html`; keep referenced image paths intact when updating its assets.
 
 ## Preview locally
 
