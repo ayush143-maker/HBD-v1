@@ -18,6 +18,15 @@ Edit the greeting and visible section content in `index.html`. The page title is
 
 Before moving or replacing an image, check its existing reference in `index.html`. Keep the same relative location, or update the reference to the new location.
 
+## Troubleshooting
+
+Use these as diagnostic steps, not as claims that the page currently has a problem:
+
+1. **Confirm the entry page.** Open the top-level `index.html`, or serve the repository directory and visit its root URL. If the page or sections are unexpected, first confirm the server is serving this project entry.
+2. **Check paths and local files.** Keep image references in `index.html` aligned with the actual relative file locations. If an image does not appear, check that the referenced file is present and that moving it has not left the reference outdated.
+3. **Inspect browser diagnostics.** Check the console during load and while scrolling or viewing animations. Use the Network panel to inspect failed requests and request URLs; this helps separate a local file/path issue from a browser or loading error.
+4. **Distinguish external fonts.** Fraunces, Instrument Serif, and Plus Jakarta Sans are requested from Google Fonts and depend on network access to that external service. A failed font request is different from a missing local image. Confirm remote requests are intentional and consider the appearance when fonts are unavailable.
+
 ## Configuration and data handling
 
 This repository is a static page centered on `index.html`; no environment template or backend configuration is listed. Do not put credentials or other private values in tracked files. Values embedded in a static page are delivered to visitors and cannot be kept secret. The greeting and referenced images are page content; review names, personal details, and media before sharing or publishing the page. Google Fonts are loaded from an external service, so browsers may make requests to Google to retrieve the linked fonts.
@@ -26,10 +35,8 @@ This repository is a static page centered on `index.html`; no environment templa
 
 This is a checklist for future review, not a report of completed compatibility testing or verified results.
 
-- Open `index.html` in current versions of browsers relevant to the page's intended audience. Also load it through the local server above to review relative paths in a served-page context.
+- Review the page in current versions of browsers relevant to the page's intended audience.
 - Read the greeting and scroll through the visual sections. Observe the animated typography after related edits.
-- Inspect the browser console during page load and while scrolling or viewing animations. Investigate errors that may affect content or presentation.
-- Inspect the Network panel for failed requests. Check every local image reference in `index.html` against the file at that relative path and confirm images display. Check requests for Fraunces, Instrument Serif, and Plus Jakarta Sans from Google Fonts; confirm remote font loading is intentional and review how the page looks if those requests fail.
 - Inspect the page at a narrow phone-sized viewport and a wide desktop-sized viewport. Check text wrapping, section layout, and image presentation for clipping or overflow.
 - Review image dimensions and file sizes for their use. Before removing a file, check that no page or style still references it; update paths when moving assets.
 
