@@ -14,39 +14,12 @@ Then visit http://localhost:8000. No deployment configuration is documented; ser
 
 ## Personalizing the page
 
-Edit the greeting and visible section content in `index.html`. The page title is “Happy Birthday, Anya ✦”; update it too if you are personalizing the page for someone else. The document uses Fraunces, Instrument Serif, and Plus Jakarta Sans from Google Fonts, so if you change typefaces, keep the font link and the page's corresponding font styling in sync.
+Edit the greeting and visible section content in `index.html`. The page title is “Happy Birthday, Anya ✦”; update it too if personalizing the page for someone else. The page requests Fraunces, Instrument Serif, and Plus Jakarta Sans from Google Fonts. If you change typefaces, keep the font link and corresponding page styling in sync.
 
-Before moving or replacing an image, check its existing reference in `index.html`. Keep the same relative location, or update the reference to the new location.
+Before moving or replacing an image, check its existing reference in `index.html`. Keep its relative location or update the reference to match the new location. The Google Fonts requests depend on network access to that service.
 
-## Troubleshooting
+## Contributor handoff
 
-Use these as diagnostic steps, not as claims that the page currently has a problem:
+Keep changes scoped to the relevant content, styling, or image references in `index.html`. Preserve the filename and existing relative paths unless a change requires updating them; when moving or replacing an image, update its reference. In the handoff, summarize what changed and identify the affected page area or file. Review names, personal details, and media before sharing or publishing this personalized page.
 
-1. **Confirm the entry page.** Open the top-level `index.html`, or serve the repository directory and visit its root URL. If the page or sections are unexpected, first confirm the server is serving this project entry.
-2. **Check paths and local files.** Keep image references in `index.html` aligned with the actual relative file locations. If an image does not appear, check that the referenced file is present and that moving it has not left the reference outdated.
-3. **Inspect browser diagnostics.** Check the console during load and while scrolling or viewing animations. Use the Network panel to inspect failed requests and request URLs; this helps separate a local file/path issue from a browser or loading error.
-4. **Distinguish external fonts.** Fraunces, Instrument Serif, and Plus Jakarta Sans are requested from Google Fonts and depend on network access to that external service. A failed font request is different from a missing local image. Confirm remote requests are intentional and consider the appearance when fonts are unavailable.
-
-## Configuration and data handling
-
-This repository is a static page centered on `index.html`; no environment template or backend configuration is listed. Do not put credentials or other private values in tracked files. Values embedded in a static page are delivered to visitors and cannot be kept secret. The greeting and referenced images are page content; review names, personal details, and media before sharing or publishing the page. Google Fonts are loaded from an external service, so browsers may make requests to Google to retrieve the linked fonts.
-
-## Browser and layout review checklist
-
-This is a checklist for future review, not a report of completed compatibility testing or verified results.
-
-- Review the page in current versions of browsers relevant to the page's intended audience.
-- Read the greeting and scroll through the visual sections. Observe the animated typography after related edits.
-- Inspect the page at a narrow phone-sized viewport and a wide desktop-sized viewport. Check text wrapping, section layout, and image presentation for clipping or overflow.
-- Review image dimensions and file sizes for their use. Before removing a file, check that no page or style still references it; update paths when moving assets.
-
-## Accessibility review checklist
-
-Use these as future review steps; they are not verified results.
-
-- Navigate through the page using only a keyboard. Check that any links or controls encountered can receive focus and be activated without a pointer.
-- Check that keyboard focus remains visible and is not lost against decorative backgrounds.
-- Review links and controls for clear, meaningful names. Check that the greeting and section text remain understandable without relying on animated typography or visual styling alone.
-- Check text contrast across the page, including the greeting and text placed over decorative backgrounds.
-- For each referenced image, check whether it conveys information that needs a text alternative; avoid redundant descriptions for purely decorative images.
-- Check animated typography and other motion with reduced motion requested. Consider reducing or stopping nonessential animation.
+Before publishing, manually review the greeting and visual sections in a browser. Check animated typography and image presentation at a narrow phone-sized viewport and a wide desktop-sized viewport, looking for clipping or overflow. This is a review checklist, not a report of completed browser checks or verified results.
