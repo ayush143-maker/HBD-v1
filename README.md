@@ -8,4 +8,6 @@ Open `index.html` in a browser; no package installation is required. For a local
 
     python -m http.server 8000
 
-Then visit http://localhost:8000. After changing the greeting or media, review the page at phone and desktop viewport sizes and check that referenced images still appear.
+Then visit http://localhost:8000. After changing the greeting or media, review the page at phone and desktop viewport sizes and check that referenced images still appear. If an image is missing, check that its path in `index.html` still matches its location.
+
+No hosting provider or provider-specific deployment steps are documented. Serve the page and its referenced images as static files, preserving their relative paths.
