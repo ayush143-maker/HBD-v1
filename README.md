@@ -20,13 +20,14 @@ Before moving or replacing an image, check its existing reference in `index.html
 
 ## Manual review checklist
 
-Use these actions to review the page; they are not verified results.
+Use these actions to review the page; they are not verified results or measured performance.
 
-- Open the known entry page, `index.html`, in a browser, or visit `http://localhost:8000` after starting the local server above.
+- Open `index.html` in a browser, or visit `http://localhost:8000` after starting the local server above.
 - Read the greeting and scroll through the sequence of visual sections. Observe the animated typography after any related changes.
-- Check each referenced image path in `index.html` against the image's actual location, then view the page and confirm the images are available.
+- Check every local image, audio, and font reference in `index.html` against a file at the referenced path. Confirm the images display after loading the page.
+- Review image and audio file sizes and dimensions for their use on the page. Avoid oversized media, and remove files only after checking that no page or style still references them.
+- The page links to Fraunces, Instrument Serif, and Plus Jakarta Sans through Google Fonts. Confirm that the external font dependency is intentional and each linked family is used; if typography changes, update the link and matching styles together. Review any external script references for the same purpose before retaining or adding them.
 - Inspect the page at a narrow phone-sized viewport and a wide desktop-sized viewport. Check text wrapping, section layout, and image presentation.
-- If you changed typefaces, check that the Google Fonts link and the corresponding styling in `index.html` stay aligned.
 
 ## Accessibility review checklist
 
