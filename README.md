@@ -35,3 +35,9 @@ This repository documents a static page, with its experience in the top-level `i
 Keep changes scoped to the relevant content, styling, or image references in `index.html`. Preserve the filename and existing relative paths unless a change requires updating them; when moving or replacing an image, update its reference. In the handoff, summarize what changed and identify the affected page area or file. Review names, personal details, and media before sharing or publishing this personalized page.
 
 Before publishing, manually review the greeting and visual sections in a browser. Check animated typography and image presentation at a narrow phone-sized viewport and a wide desktop-sized viewport, looking for clipping or overflow. This is a review checklist, not a report of completed browser checks or verified results.
+
+## Final release review
+
+- Open `index.html` from the published location and confirm the page loads as expected.
+- Test with network access available and keep a sensible fallback for externally loaded resources.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
