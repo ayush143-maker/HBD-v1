@@ -1,19 +1,17 @@
 # HBD-v1
 
-A personalized birthday web page with animated typography and interactive sections for a small digital celebration.
+HBD-v1 is a personalised birthday microsite designed as a small digital celebration. Animated typography and a sequence of visual sections help the page unfold like a greeting rather than a standard static card.
 
-## Run locally
+The repository is a self-contained web experience. Its images and decorative elements are part of the presentation, so keep their file paths intact when updating the page or replacing assets.
 
-Open index.html in a modern browser. If browser restrictions block local assets or APIs, serve the folder over HTTP.
+## Preview locally
 
-## Structure and assets
+Open index.html in a modern browser. No package installation is required. For a local HTTP preview, run:
 
-`index.html` is the primary entry point. Keep linked images, audio, scripts, and styles in their existing relative locations; renaming files may break references.
+    python -m http.server 8000
 
-## Preview and deployment
+Visit http://localhost:8000 to view the page.
 
-Open the page in a modern browser. If local-file behavior is restricted, start a simple HTTP server from this folder and open the local address in your browser. For static hosting, publish the correct root folder and check asset paths after deployment.
+## Personalising the page
 
-## Making changes
-
-Test the page after edits and check both phone-sized and desktop-sized viewports. Confirm that buttons and other visible interactions work in the deployed version as well as locally.
+Update the greeting, copy, and media carefully so the sequence still reads naturally from beginning to end. Check the page on a phone as well as a desktop browser, especially where text, animation, or image fallbacks are involved.
