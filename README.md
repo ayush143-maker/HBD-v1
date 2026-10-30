@@ -4,8 +4,8 @@ A personalised birthday microsite for Anya, with animated typography and a seque
 
 ## Preview and review locally
 
-Open `index.html` in a modern browser; no package installation is required. For a local HTTP preview, run this from the repository directory:
+Open `index.html` in a browser; no package installation is required. For a local HTTP preview, run this from the repository directory:
 
     python -m http.server 8000
 
-Then visit http://localhost:8000. After changing the greeting or media, review the page on phone and desktop screens and check that referenced images still appear.
+Then visit http://localhost:8000. After changing the greeting or media, review the page at phone and desktop viewport sizes and check that referenced images still appear.
