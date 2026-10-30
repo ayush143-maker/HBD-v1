@@ -27,3 +27,14 @@ Use these actions to review the page; they are not verified results.
 - Check each referenced image path in `index.html` against the image's actual location, then view the page and confirm the images are available.
 - Inspect the page at a narrow phone-sized viewport and a wide desktop-sized viewport. Check text wrapping, section layout, and image presentation.
 - If you changed typefaces, check that the Google Fonts link and the corresponding styling in `index.html` stay aligned.
+
+## Accessibility review checklist
+
+Use these as future review steps; they are not verified results.
+
+- Navigate through the page using only a keyboard. Check that any links or controls encountered can receive focus and be activated without a pointer.
+- Check that keyboard focus remains visible as you move through the page and is not lost against decorative backgrounds.
+- Review any links or controls for clear, meaningful names. Check that the greeting and section text remain understandable without relying on animated typography or visual styling alone.
+- Check text contrast across the page, including the greeting and text placed over decorative backgrounds.
+- For each referenced image, check whether it conveys information that needs a text alternative; avoid redundant descriptions for purely decorative images.
+- Check animated typography and other motion with reduced motion requested. Consider reducing or stopping nonessential animation.
